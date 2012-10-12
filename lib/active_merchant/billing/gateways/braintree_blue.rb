@@ -300,6 +300,7 @@ module ActiveMerchant #:nodoc:
         end
         parameters[:billing] = map_address(options[:billing_address]) if options[:billing_address]
         parameters[:shipping] = map_address(options[:shipping_address]) if options[:shipping_address]
+        parameters[:custom_fields] = options[:custom_fields] if options[:custom_fields]
         parameters
       end
     end
